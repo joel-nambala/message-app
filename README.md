@@ -1,2 +1,3 @@
-# message-app
-App to send messages
+# Message application
+
+App to send messages using vanilla JavaScript
