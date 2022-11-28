@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+    <title>Message app</title>
+  </head>
+  <body>
+    <section class="message">
+      <form class="message-form">
+        <h1 class="message-title">Message app</h1>
+        <input
+          type="number"
+          class="message-input"
+          placeholder="Phone number"
+          required
+        />
+        <textarea
+          name="message"
+          id="message"
+          class="message-body"
+          placeholder="Type your message 📩"
+        ></textarea>
+        <button class="message-btn">Send</button>
+      </form>
+    </section>
+    <section class="popup hidden">
+      <div class="overlay"></div>
+      <div class="popup-content">
+        <p class="close">&times;</p>
+        <h3 class="phone">Send to : 87958475657</h3>
+        <p class="message-txt">Message body:</p>
+        <p class="message-bdy">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat,
+          harum.
+        </p>
+      </div>
+    </section>
+  </body>
+</html>

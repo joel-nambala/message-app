@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: sans-serif;
+  position: relative;
+}
+
+.message {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.message-title {
+  color: #fff;
+  margin-bottom: 3rem;
+  font-size: 2.6rem;
+  text-transform: capitalize;
+}
+
+.message-form {
+  background-color: #1971c2;
+  padding: 4rem 2rem;
+}
+
+.message-input {
+  display: block;
+  padding: 1rem 2rem;
+  font-size: 1.6rem;
+  font-family: inherit;
+  margin-bottom: 2rem;
+  outline: none;
+  background-color: rgb(255, 255, 255, 0.8);
+  border: none;
+}
+
+.message-body {
+  display: block;
+  font-family: inherit;
+  padding: 1rem;
+  margin-bottom: 3rem;
+  width: 100%;
+  outline: none;
+  background-color: rgb(255, 255, 255, 0.8);
+  border: none;
+}
+
+.message-btn {
+  background: none;
+  padding: 1rem 2rem;
+  font-size: 1.6rem;
+  background-color: rgb(255, 255, 255, 0.8);
+  border: none;
+  border-radius: 100px;
+  cursor: pointer;
+}
+
+.hidden {
+  visibility: hidden;
+  pointer-events: none;
+  transition: all 0.5s ease;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  backdrop-filter: blur(6px);
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 2;
+}
+
+.popup-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 60vw;
+  background-color: rgb(214, 51, 108, 0.5);
+  color: #fff;
+  z-index: 4;
+  margin: 0 auto;
+  transform: translate(-50%, -50%);
+  padding: 2rem;
+  box-shadow: 0 0 20rem #555;
+}
+
+.phone {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+}
+
+.message-txt {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+.message-bdy {
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+
+.close {
+  font-size: 2.4rem;
+  position: absolute;
+  top: 1rem;
+  right: 2rem;
+  cursor: pointer;
+}
